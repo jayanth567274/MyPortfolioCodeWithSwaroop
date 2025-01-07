@@ -2,37 +2,59 @@
 <html lang="en">
 <head>
    <title>Index of Html</title>
-<body style="background-color: burlywood;">
-    <h1>My profile info</h1>
-    <a href="http://youtube.com">
-        <button>
+   <link rel="stylesheet" href="style.css">
+   
+<body >
+
+<header >
+    <div>
+    <h1 style="text-align: center;">My profile info</h1>
+    <br>
+    <br>
+    <a href="#about">
+        <button class="button">
             About
         </button>
     </a>
-    <a href="http://google.com">
-        <button>
+    <a href="#skills">
+        <button class="button">
             Skils
         </button>
     </a>
-    <a href="http://W3Schools.com">
-        <button>
+    <a href="#projects">
+        <button class="button">
             projects
         </button>
     </a>
-    <a href="http://playstore.com">
-        <button>
+    <a href="#contact">
+        <button class="button">
             contact
         </button>
     </a>
-    
+    </div>
+
+
+
+</header>
+
+
+<main>
+     
+<section id="about">
     <h1>Jayanth JVS</h1>
-    <img src="Sai.png" height="200" >
+    <img src="Sai.png" height="150" >
     <p>I am a software developer in orakel company.</p>
     
     <p>I studied my engerneering in<em>Bharath institute of higher educational and research</em> </p>
     <p>I learn my coding language in <br>
        bro code.</p>
-    <p> you can <strong>Click here</strong> to check my projects.</p> 
+    <p> you can <strong>Click here</strong> to check my projects.</p>
+    
+
+</section>
+
+
+<section id="skills"> 
     <h1>My skils </h1>  
     <ol>
         <li>Python basics</li>
@@ -41,37 +63,88 @@
         <li>css Basics</li>
         <li>Java script Basics</li>
     </ol>
-    <h1> Contact Me</h1>
-    <p>Feel free to get touch with me from Below:</p>
+
+</section>
+
+<section id="projects">
+    <h1>My projects</h1>
+    <table border="1" text-align="center" >
+    <tr>
+        <th style="font-family: fantasy ;">Project Name</th>
+        <th style="font-family: fantasy;">Project Description</th>
+    </tr>
+    <tr>
+
+        <td style="font-family: fantasy;">my html website </td>
+        <td style="font-family: fantasy;"> this my own website about my cv</td>
+        
+    </tr>
+    <tr>
+        <td style="font-family: fantasy;">my python project</td>
+        <td style="font-family: fantasy;">this is my python project about my college</td>
+    </tr>
+
+
+
+    </table>
+
+
+
+</section>
+
+<section id="contact">
     <form>
-     <label for="name">Name:</label>
-     <input type="text">
+        <h1>Contact me</h1>
+         
+         <p>Feel free to get touch with me from Below:</p>
+         <div>
+          <label for="name">Name:</label>
+          <input type="text">
+         </div>
 
-     <label for="email">Email:</label>
-     <input type="email">
-     <br>
+           <div>
+          <label for="email">Email:</label>
+          <input type="email">
+            </div>
+          
 
-     <b> Choose your Gender:</b>
-     <input type="radio" id="male" value="male">
-     <label for="male">Male</label>
-     <input type="radio" id="female" value="female">
-     <label for="female">Feamle</label>
-      <br>
+            <div>
+          <b> Choose your Gender:</b>
+          
+          <input type="radio" id="male" value="male">
+          <label for="male">Male</label>
+            
+            
+          <input type="radio" id="female" value="female">
+          <label for="female">Feamle</label>
+            </div>
+            
+           <div>
+           <b>Select your Intresets:</b>
+           
+           <input type="checkbox" id="coding" value="coding">
+           <label for="coding">Coding</label>
+              <input type="checkbox" id="reading" value="reading">
+           <label for="Reading">Reading</label>
+           
+           <label for="bio">Bio (upto 200 characters):</label>
+           <input type="text">
+            
+              <button type="submit" class="submit">submit</button>
+           </div>
+           
+        </form>
+</section>
+</main>
+<a href="">
+<button class="fixed"> TOP</button>
+</a>
+<footer>
 
-      <b>Select your Intresets:</b>
-      <input type="checkbox" id="coding" value="coding">
-      <label for="coding">Coding</label>
-      <input type="checkbox" id="Reading" value="Reading">
-      <label for="Reading">Reading</label>
+<p style="text-transform: capitalize;"><b>@ 2024 My portfoli0</b></p>
 
-      <br>
-      <label for="bio">Bio (upto 200 characters):</label>
-     <input type="text">
-     <br>
+</footer>
 
-     <button type="submit">submit</button>
     
-
-     </form>
 </body>
 </html>
